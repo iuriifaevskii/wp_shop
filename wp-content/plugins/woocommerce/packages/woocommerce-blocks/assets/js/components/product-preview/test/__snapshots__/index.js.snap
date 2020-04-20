@@ -30,7 +30,7 @@ exports[`ProductPreview should render a single product preview with an image 1`]
     className="wc-product-preview__price wc-block-grid__product-price"
     dangerouslySetInnerHTML={
       Object {
-        "__html": "<span class=\\"woocommerce-Price-amount amount\\"><span class=\\"woocommerce-Price-currencySymbol\\">&#36;</span>65.00</span>",
+        "__html": "<span class=\\"woocommerce-Price-amount amount\\"><span class=\\"woocommerce-Price-currencySymbol\\"></span>65.00 грн.</span>",
       }
     }
   />
@@ -76,7 +76,7 @@ exports[`ProductPreview should render a single product preview without an image 
     className="wc-product-preview__price wc-block-grid__product-price"
     dangerouslySetInnerHTML={
       Object {
-        "__html": "<span class=\\"woocommerce-Price-amount amount\\"><span class=\\"woocommerce-Price-currencySymbol\\">&#36;</span>65.00</span>",
+        "__html": "<span class=\\"woocommerce-Price-amount amount\\"><span class=\\"woocommerce-Price-currencySymbol\\"></span>65.00 грн.</span>",
       }
     }
   />

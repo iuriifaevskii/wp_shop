@@ -110,9 +110,9 @@ class WC_Settings_Advanced extends WC_Settings_Page {
 					),
 
 					array(
-						'title'    => __( 'My account page', 'woocommerce' ),
+						'title'    => __( 'Профіль сторінка', 'woocommerce' ),
 						/* Translators: %s Page contents. */
-						'desc'     => sprintf( __( 'Page contents: [%s]', 'woocommerce' ), apply_filters( 'woocommerce_my_account_shortcode_tag', 'woocommerce_my_account' ) ),
+						'desc'     => sprintf( __( 'Контент: [%s]', 'woocommerce' ), apply_filters( 'woocommerce_my_account_shortcode_tag', 'woocommerce_my_account' ) ),
 						'id'       => 'woocommerce_myaccount_page_id',
 						'type'     => 'single_select_page',
 						'default'  => '',
@@ -131,7 +131,7 @@ class WC_Settings_Advanced extends WC_Settings_Page {
 
 					array(
 						'title'    => __( 'Terms and conditions', 'woocommerce' ),
-						'desc'     => __( 'If you define a "Terms" page the customer will be asked if they accept them when checking out.', 'woocommerce' ),
+						'desc'     => __( '', 'woocommerce' ),
 						'id'       => 'woocommerce_terms_page_id',
 						'default'  => '',
 						'class'    => 'wc-enhanced-select-nostd',
@@ -187,7 +187,7 @@ class WC_Settings_Advanced extends WC_Settings_Page {
 					),
 
 					array(
-						'title'    => __( 'Pay', 'woocommerce' ),
+						'title'    => __( 'Заплатити', 'woocommerce' ),
 						'desc'     => __( 'Endpoint for the "Checkout &rarr; Pay" page.', 'woocommerce' ),
 						'id'       => 'woocommerce_checkout_pay_endpoint',
 						'type'     => 'text',

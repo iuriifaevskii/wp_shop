@@ -19,7 +19,7 @@ describe( 'ProductPreview', () => {
 			id: 1,
 			name: 'Winter Jacket',
 			price_html:
-				'<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>65.00</span>',
+				'<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span>65.00 грн.</span>',
 			images: [
 				{
 					src: 'https://example.local/product.jpg',
@@ -37,7 +37,7 @@ describe( 'ProductPreview', () => {
 			id: 1,
 			name: 'Winter Jacket',
 			price_html:
-				'<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#36;</span>65.00</span>',
+				'<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span>65.00 грн.</span>',
 			images: [],
 		};
 		const component = TestRenderer.create(

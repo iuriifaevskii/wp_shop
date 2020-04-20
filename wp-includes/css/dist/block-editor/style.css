@@ -1749,7 +1749,6 @@ body.is-fullscreen-mode .block-editor-editor-skeleton {
 .block-editor-inserter__preview-content {
   border: 1px solid #e2e4e7;
   border-radius: 4px;
-  min-height: 150px;
   display: -ms-grid;
   display: grid;
   flex-grow: 2; }

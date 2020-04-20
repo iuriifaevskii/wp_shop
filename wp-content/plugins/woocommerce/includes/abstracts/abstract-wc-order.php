@@ -2014,7 +2014,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 
 		if ( $subtotal ) {
 			$total_rows['cart_subtotal'] = array(
-				'label' => __( 'Subtotal:', 'woocommerce' ),
+				'label' => __( 'Сума:', 'woocommerce' ),
 				'value' => $subtotal,
 			);
 		}

@@ -236,9 +236,9 @@ class WC_Checkout {
 				'order_comments' => array(
 					'type'        => 'textarea',
 					'class'       => array( 'notes' ),
-					'label'       => __( 'Order notes', 'woocommerce' ),
+					'label'       => __( "Якщо Ви не з міста Рівного, зазначте, буль ласка, адресу нової пошти (не обов'язково)", 'woocommerce' ),
 					'placeholder' => esc_attr__(
-						'Notes about your order, e.g. special notes for delivery.',
+						'Примітка',
 						'woocommerce'
 					),
 				),
@@ -720,7 +720,7 @@ class WC_Checkout {
 						break;
 					case 'billing':
 						/* translators: %s: field name */
-						$field_label = sprintf( _x( 'Billing %s', 'checkout-validation', 'woocommerce' ), $field_label );
+						$field_label = sprintf( _x( '%s', 'checkout-validation', 'woocommerce' ), $field_label );
 						break;
 				}
 
@@ -782,7 +782,7 @@ class WC_Checkout {
 
 				if ( $validate_fieldset && $required && '' === $data[ $key ] ) {
 					/* translators: %s: field name */
-					$errors->add( 'required-field', apply_filters( 'woocommerce_checkout_required_field_notice', sprintf( __( '%s is a required field.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ), $field_label ), array( 'id' => $key ) );
+					$errors->add( 'required-field', apply_filters( 'woocommerce_checkout_required_field_notice', sprintf( __( "%s є обовязковим полем.", 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ), $field_label ), array( 'id' => $key ) );
 				}
 			}
 		}

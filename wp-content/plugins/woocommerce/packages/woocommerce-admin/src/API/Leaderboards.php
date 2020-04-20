@@ -318,7 +318,7 @@ class Leaderboards extends \WC_REST_Data_Controller {
 			'label'   => __( 'Top Products - Items Sold', 'woocommerce' ),
 			'headers' => array(
 				array(
-					'label' => __( 'Product', 'woocommerce' ),
+					'label' => __( 'Продукт', 'woocommerce' ),
 				),
 				array(
 					'label' => __( 'Items Sold', 'woocommerce' ),

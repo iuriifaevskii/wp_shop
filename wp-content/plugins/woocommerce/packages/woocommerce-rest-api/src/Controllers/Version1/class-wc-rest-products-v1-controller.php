@@ -2215,7 +2215,7 @@ class WC_REST_Products_V1_Controller extends WC_REST_Posts_Controller {
 								'context'     => array( 'view', 'edit' ),
 							),
 							'visible' => array(
-								'description' => __( "Define if the attribute is visible on the \"Additional information\" tab in the product's page.", 'woocommerce' ),
+								'description' => __( "Define if the attribute is visible on the \"Додаткова Інформація\" tab in the product's page.", 'woocommerce' ),
 								'type'        => 'boolean',
 								'default'     => false,
 								'context'     => array( 'view', 'edit' ),

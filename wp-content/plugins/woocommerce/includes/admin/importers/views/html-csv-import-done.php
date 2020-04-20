@@ -58,8 +58,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<table class="widefat wc-importer-error-log-table">
 			<thead>
 				<tr>
-					<th><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
-					<th><?php esc_html_e( 'Reason for failure', 'woocommerce' ); ?></th>
+					<th><?php esc_html_e( 'Товари', 'woocommerce' ); ?></th>
+					<th><?php esc_html_e( 'Причина невдачі', 'woocommerce' ); ?></th>
 				</tr>
 			</thead>
 			<tbody>

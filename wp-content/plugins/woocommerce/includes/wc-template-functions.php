@@ -810,11 +810,11 @@ function wc_get_privacy_policy_text( $type = '' ) {
 	switch ( $type ) {
 		case 'checkout':
 			/* translators: %s privacy policy page name and link */
-			$text = get_option( 'woocommerce_checkout_privacy_policy_text', sprintf( __( 'Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our %s.', 'woocommerce' ), '[privacy_policy]' ) );
+			$text = get_option( 'woocommerce_checkout_privacy_policy_text', sprintf( __( '', 'woocommerce' ), '[privacy_policy]' ) );
 			break;
 		case 'registration':
 			/* translators: %s privacy policy page name and link */
-			$text = get_option( 'woocommerce_registration_privacy_policy_text', sprintf( __( 'Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our %s.', 'woocommerce' ), '[privacy_policy]' ) );
+			$text = get_option( 'woocommerce_registration_privacy_policy_text', sprintf( __( '', 'woocommerce' ), '[privacy_policy]' ) );
 			break;
 	}
 
@@ -1358,12 +1358,12 @@ if ( ! function_exists( 'woocommerce_catalog_ordering' ) ) {
 		$catalog_orderby_options = apply_filters(
 			'woocommerce_catalog_orderby',
 			array(
-				'menu_order' => __( 'Default sorting', 'woocommerce' ),
-				'popularity' => __( 'Sort by popularity', 'woocommerce' ),
-				'rating'     => __( 'Sort by average rating', 'woocommerce' ),
-				'date'       => __( 'Sort by latest', 'woocommerce' ),
-				'price'      => __( 'Sort by price: low to high', 'woocommerce' ),
-				'price-desc' => __( 'Sort by price: high to low', 'woocommerce' ),
+				'menu_order' => __( 'Сортувати по замовчуванню', 'woocommerce' ),
+				'popularity' => __( 'Сортувати по популярності', 'woocommerce' ),
+				'rating'     => __( 'Сортувати по рейтингу', 'woocommerce' ),
+				'date'       => __( 'Сортувати по новизні', 'woocommerce' ),
+				'price'      => __( 'Сортувати по ціні: від дешевших до дорожчих', 'woocommerce' ),
+				'price-desc' => __( 'Сортувати по ціні: від дорожчих до дешевших', 'woocommerce' ),
 			)
 		);
 
@@ -1748,7 +1748,7 @@ if ( ! function_exists( 'woocommerce_default_product_tabs' ) ) {
 		// Additional information tab - shows attributes.
 		if ( $product && ( $product->has_attributes() || apply_filters( 'wc_product_enable_dimensions_display', $product->has_weight() || $product->has_dimensions() ) ) ) {
 			$tabs['additional_information'] = array(
-				'title'    => __( 'Additional information', 'woocommerce' ),
+				'title'    => __( 'Додаткова Інформація', 'woocommerce' ),
 				'priority' => 20,
 				'callback' => 'woocommerce_product_additional_information_tab',
 			);
@@ -2076,7 +2076,7 @@ if ( ! function_exists( 'woocommerce_widget_shopping_cart_button_view_cart' ) ) 
 	 * Output the view cart button.
 	 */
 	function woocommerce_widget_shopping_cart_button_view_cart() {
-		echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="button wc-forward">' . esc_html__( 'View cart', 'woocommerce' ) . '</a>';
+		echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="button wc-forward">' . esc_html__( 'Показати корзину', 'woocommerce' ) . '</a>';
 	}
 }
 
@@ -2086,7 +2086,7 @@ if ( ! function_exists( 'woocommerce_widget_shopping_cart_proceed_to_checkout' )
 	 * Output the proceed to checkout button.
 	 */
 	function woocommerce_widget_shopping_cart_proceed_to_checkout() {
-		echo '<a href="' . esc_url( wc_get_checkout_url() ) . '" class="button checkout wc-forward">' . esc_html__( 'Checkout', 'woocommerce' ) . '</a>';
+		echo '<a href="' . esc_url( wc_get_checkout_url() ) . '" class="button checkout wc-forward">' . esc_html__( 'Замовлення', 'woocommerce' ) . '</a>';
 	}
 }
 
@@ -2097,7 +2097,7 @@ if ( ! function_exists( 'woocommerce_widget_shopping_cart_subtotal' ) ) {
 	 * @since 3.7.0
 	 */
 	function woocommerce_widget_shopping_cart_subtotal() {
-		echo '<strong>' . esc_html__( 'Subtotal', 'woocommerce' ) . ':</strong> ' . WC()->cart->get_cart_subtotal(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		echo '<strong>' . esc_html__( 'Сума', 'woocommerce' ) . ':</strong> ' . WC()->cart->get_cart_subtotal(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }
 
@@ -2237,7 +2237,7 @@ if ( ! function_exists( 'woocommerce_checkout_payment' ) ) {
 			array(
 				'checkout'           => WC()->checkout(),
 				'available_gateways' => $available_gateways,
-				'order_button_text'  => apply_filters( 'woocommerce_order_button_text', __( 'Place order', 'woocommerce' ) ),
+				'order_button_text'  => apply_filters( 'woocommerce_order_button_text', __( 'Підтвердити замовлення', 'woocommerce' ) ),
 			)
 		);
 	}

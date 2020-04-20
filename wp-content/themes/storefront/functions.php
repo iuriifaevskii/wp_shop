@@ -72,3 +72,15 @@ if ( version_compare( get_bloginfo( 'version' ), '4.7.3', '>=' ) && ( is_admin()
  * Note: Do not add any custom code here. Please use a custom plugin so that your customizations aren't lost during updates.
  * https://github.com/woocommerce/theme-customisations
  */
+add_filter( 'woocommerce_checkout_fields' , 'custom_checkout_fields' );
+function custom_checkout_fields( $fields ) {
+unset($fields['billing']['billing_postcode']);
+unset($fields['billing']['billing_last_name']);
+unset($fields['billing']['billing_company']);
+unset($fields['billing']['billing_address_1']);
+unset($fields['billing']['billing_address_2']);
+unset($fields['billing']['billing_state']);
+unset($fields['billing']['billing_city']);
+unset($fields['billing']['billing_country']);
+return $fields;
+}

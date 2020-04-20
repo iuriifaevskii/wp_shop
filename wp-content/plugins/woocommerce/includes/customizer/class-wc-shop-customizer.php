@@ -273,12 +273,12 @@ class WC_Shop_Customizer {
 		$options = apply_filters(
 			'woocommerce_default_catalog_orderby_options',
 			array(
-				'menu_order' => __( 'Default sorting (custom ordering + name)', 'woocommerce' ),
-				'popularity' => __( 'Popularity (sales)', 'woocommerce' ),
-				'rating'     => __( 'Average rating', 'woocommerce' ),
-				'date'       => __( 'Sort by most recent', 'woocommerce' ),
-				'price'      => __( 'Sort by price (asc)', 'woocommerce' ),
-				'price-desc' => __( 'Sort by price (desc)', 'woocommerce' ),
+				'menu_order' => __( 'Сортувати по імені (custom ordering + name)', 'woocommerce' ),
+				'popularity' => __( 'Популярність (sales)', 'woocommerce' ),
+				'rating'     => __( 'Рейтинг', 'woocommerce' ),
+				'date'       => __( 'Найновіші', 'woocommerce' ),
+				'price'      => __( 'Сортувати за ціною (asc)', 'woocommerce' ),
+				'price-desc' => __( 'Сортувати за ціною (desc)', 'woocommerce' ),
 			)
 		);
 
@@ -675,7 +675,7 @@ class WC_Shop_Customizer {
 		$wp_customize->add_section(
 			'woocommerce_checkout',
 			array(
-				'title'       => __( 'Checkout', 'woocommerce' ),
+				'title'       => __( 'Замовлення', 'woocommerce' ),
 				'priority'    => 20,
 				'panel'       => 'woocommerce',
 				'description' => __( 'These options let you change the appearance of the WooCommerce checkout.', 'woocommerce' ),
@@ -743,7 +743,7 @@ class WC_Shop_Customizer {
 			'woocommerce_checkout_privacy_policy_text',
 			array(
 				/* translators: %s privacy policy page name and link */
-				'default'           => sprintf( __( 'Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our %s.', 'woocommerce' ), '[privacy_policy]' ),
+				'default'           => sprintf( __( '', 'woocommerce' ), '[privacy_policy]' ),
 				'type'              => 'option',
 				'capability'        => 'manage_woocommerce',
 				'sanitize_callback' => 'wp_kses_post',

@@ -17,21 +17,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<?php
-			/**
-			 * Functions hooked in to homepage action
-			 *
-			 * @hooked storefront_homepage_content      - 10
-			 * @hooked storefront_product_categories    - 20
-			 * @hooked storefront_recent_products       - 30
-			 * @hooked storefront_featured_products     - 40
-			 * @hooked storefront_popular_products      - 50
-			 * @hooked storefront_on_sale_products      - 60
-			 * @hooked storefront_best_selling_products - 70
-			 */
-			do_action( 'homepage' );
-			?>
+		<div id="post-2" class="post-2 page type-page status-publish has-post-thumbnail hentry" style="min-height: 65vh;text-align: right;background-image: url(<?php echo esc_url( get_permalink())?>wp-content/uploads/2020/04/bg.png); width: 1098px; margin-left: -60px;" data-featured-image="http://localhost/wp-content/uploads/2020/04/bg-150x150.png">
+		
+		<div style="width:50%; float:right">
+		<div style="background:black;color:white;font-size:33px; line-height:32px;margin-top: 60px;padding:20px;margin-right:40px">Найкращий товар за найкращими цінами</div>
+		<a href="/shop/" class="button" value="Перейти в магазин" style="margin-top:30px; margin-right:40px">Перейти в магазин</a>
 
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php

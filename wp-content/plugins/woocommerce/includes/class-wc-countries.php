@@ -654,9 +654,9 @@ class WC_Countries {
 
 		$fields = array(
 			'first_name' => array(
-				'label'        => __( 'First name', 'woocommerce' ),
+				'label'        => __( "Ім'я", 'woocommerce' ),
 				'required'     => true,
-				'class'        => array( 'form-row-first' ),
+				'class'        => array( 'form-row-wide' ),
 				'autocomplete' => 'given-name',
 				'priority'     => 10,
 			),
@@ -683,10 +683,10 @@ class WC_Countries {
 				'priority'     => 40,
 			),
 			'address_1'  => array(
-				'label'        => __( 'Street address', 'woocommerce' ),
+				'label'        => __( 'Адреса', 'woocommerce' ),
 				/* translators: use local order of street name and house number. */
-				'placeholder'  => esc_attr__( 'House number and street name', 'woocommerce' ),
-				'required'     => true,
+				'placeholder'  => esc_attr__( 'Місто в яке доставити', 'woocommerce' ),
+				'required'     => false,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'autocomplete' => 'address-line1',
 				'priority'     => 50,
@@ -699,7 +699,7 @@ class WC_Countries {
 				'required'     => 'required' === get_option( 'woocommerce_checkout_address_2_field', 'optional' ),
 			),
 			'city'       => array(
-				'label'        => __( 'Town / City', 'woocommerce' ),
+				'label'        => __( 'Місто', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'autocomplete' => 'address-level2',
@@ -1368,7 +1368,7 @@ class WC_Countries {
 		if ( 'billing_' === $type ) {
 			if ( 'hidden' !== get_option( 'woocommerce_checkout_phone_field', 'required' ) ) {
 				$address_fields['billing_phone'] = array(
-					'label'        => __( 'Phone', 'woocommerce' ),
+					'label'        => __( 'Номер мобільного', 'woocommerce' ),
 					'required'     => 'required' === get_option( 'woocommerce_checkout_phone_field', 'required' ),
 					'type'         => 'tel',
 					'class'        => array( 'form-row-wide' ),
@@ -1378,8 +1378,8 @@ class WC_Countries {
 				);
 			}
 			$address_fields['billing_email'] = array(
-				'label'        => __( 'Email address', 'woocommerce' ),
-				'required'     => true,
+				'label'        => __( "Email Адреса (не обов'язково)", 'woocommerce' ),
+				'required'     => false,
 				'type'         => 'email',
 				'class'        => array( 'form-row-wide' ),
 				'validate'     => array( 'email' ),

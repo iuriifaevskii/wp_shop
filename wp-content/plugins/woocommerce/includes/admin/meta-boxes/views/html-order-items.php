@@ -144,7 +144,7 @@ if ( wc_tax_enabled() ) {
 	<?php endif; ?>
 	<table class="wc-order-totals">
 			<tr>
-				<td class="label"><?php esc_html_e( 'Items Subtotal:', 'woocommerce' ); ?></td>
+				<td class="label"><?php esc_html_e( 'Сума:', 'woocommerce' ); ?></td>
 				<td width="1%"></td>
 				<td class="total">
 					<?php echo wc_price( $order->get_subtotal(), array( 'currency' => $order->get_currency() ) ); // WPCS: XSS ok. ?>
@@ -152,7 +152,7 @@ if ( wc_tax_enabled() ) {
 			</tr>
 		<?php if ( 0 < $order->get_total_discount() ) : ?>
 			<tr>
-				<td class="label"><?php esc_html_e( 'Coupon(s):', 'woocommerce' ); ?></td>
+				<td class="label"><?php esc_html_e( 'Купон(и):', 'woocommerce' ); ?></td>
 				<td width="1%"></td>
 				<td class="total">-
 					<?php echo wc_price( $order->get_total_discount(), array( 'currency' => $order->get_currency() ) ); // WPCS: XSS ok. ?>
@@ -161,7 +161,7 @@ if ( wc_tax_enabled() ) {
 		<?php endif; ?>
 		<?php if ( 0 < $order->get_total_fees() ) : ?>
 			<tr>
-				<td class="label"><?php esc_html_e( 'Fees:', 'woocommerce' ); ?></td>
+				<td class="label"><?php esc_html_e( 'Податки:', 'woocommerce' ); ?></td>
 				<td width="1%"></td>
 				<td class="total">
 					<?php echo wc_price( $order->get_total_fees(), array( 'currency' => $order->get_currency() ) ); // WPCS: XSS ok. ?>
@@ -173,7 +173,7 @@ if ( wc_tax_enabled() ) {
 
 		<?php if ( $order->get_shipping_methods() ) : ?>
 			<tr>
-				<td class="label"><?php esc_html_e( 'Shipping:', 'woocommerce' ); ?></td>
+				<td class="label"><?php esc_html_e( 'Доставка:', 'woocommerce' ); ?></td>
 				<td width="1%"></td>
 				<td class="total">
 					<?php echo wc_price( $order->get_shipping_total(), array( 'currency' => $order->get_currency() ) ); // WPCS: XSS ok. ?>
@@ -198,7 +198,7 @@ if ( wc_tax_enabled() ) {
 		<?php do_action( 'woocommerce_admin_order_totals_after_tax', $order->get_id() ); ?>
 
 		<tr>
-			<td class="label"><?php esc_html_e( 'Order Total', 'woocommerce' ); ?>:</td>
+			<td class="label"><?php esc_html_e( 'Загальна Вартість', 'woocommerce' ); ?>:</td>
 			<td width="1%"></td>
 			<td class="total">
 				<?php echo wc_price( $order->get_total(), array( 'currency' => $order->get_currency() ) ); // WPCS: XSS ok. ?>
@@ -375,8 +375,8 @@ if ( wc_tax_enabled() ) {
 						<table class="widefat">
 							<thead>
 								<tr>
-									<th><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
-									<th><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
+									<th><?php esc_html_e( 'Товари', 'woocommerce' ); ?></th>
+									<th><?php esc_html_e( 'Кількість', 'woocommerce' ); ?></th>
 								</tr>
 							</thead>
 							<?php

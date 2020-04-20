@@ -510,7 +510,7 @@ class WC_Install {
 				),
 				'checkout'  => array(
 					'name'    => _x( 'checkout', 'Page slug', 'woocommerce' ),
-					'title'   => _x( 'Checkout', 'Page title', 'woocommerce' ),
+					'title'   => _x( 'Замовлення', 'Page title', 'woocommerce' ),
 					'content' => '<!-- wp:shortcode -->[' . apply_filters( 'woocommerce_checkout_shortcode_tag', 'woocommerce_checkout' ) . ']<!-- /wp:shortcode -->',
 				),
 				'myaccount' => array(

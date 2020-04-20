@@ -19,7 +19,7 @@ export const previewProducts = [
 		),
 		price: '7.99',
 		price_html:
-			'<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>7.99</span>',
+			'<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol"></span>7.99 грн.</span>',
 		images: [
 			{
 				id: 1,
@@ -46,8 +46,8 @@ export const previewProducts = [
 			price_range: null,
 		},
 		add_to_cart: {
-			text: __( 'Add to cart', 'woocommerce' ),
-			description: __( 'Add to cart', 'woocommerce' ),
+			text: __( 'Додати в корзину', 'woocommerce' ),
+			description: __( 'Додати в корзину', 'woocommerce' ),
 		},
 		has_options: false,
 		is_purchasable: true,

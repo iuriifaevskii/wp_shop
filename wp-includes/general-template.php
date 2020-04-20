@@ -1561,19 +1561,19 @@ function get_the_archive_title() {
 
 	if ( is_category() ) {
 		/* translators: Category archive title. %s: Category name. */
-		$title = sprintf( __( 'Category: %s' ), single_cat_title( '', false ) );
+		$title = sprintf( __( 'Категорія: %s' ), single_cat_title( '', false ) );
 	} elseif ( is_tag() ) {
 		/* translators: Tag archive title. %s: Tag name. */
-		$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
+		$title = sprintf( __( 'Тег: %s' ), single_tag_title( '', false ) );
 	} elseif ( is_author() ) {
 		/* translators: Author archive title. %s: Author name. */
-		$title = sprintf( __( 'Author: %s' ), '<span class="vcard">' . get_the_author() . '</span>' );
+		$title = sprintf( __( 'Автор: %s' ), '<span class="vcard">' . get_the_author() . '</span>' );
 	} elseif ( is_year() ) {
 		/* translators: Yearly archive title. %s: Year. */
-		$title = sprintf( __( 'Year: %s' ), get_the_date( _x( 'Y', 'yearly archives date format' ) ) );
+		$title = sprintf( __( 'Рік: %s' ), get_the_date( _x( 'Y', 'yearly archives date format' ) ) );
 	} elseif ( is_month() ) {
 		/* translators: Monthly archive title. %s: Month name and year. */
-		$title = sprintf( __( 'Month: %s' ), get_the_date( _x( 'F Y', 'monthly archives date format' ) ) );
+		$title = sprintf( __( 'Місяць: %s' ), get_the_date( _x( 'F Y', 'monthly archives date format' ) ) );
 	} elseif ( is_day() ) {
 		/* translators: Daily archive title. %s: Date. */
 		$title = sprintf( __( 'Day: %s' ), get_the_date( _x( 'F j, Y', 'daily archives date format' ) ) );

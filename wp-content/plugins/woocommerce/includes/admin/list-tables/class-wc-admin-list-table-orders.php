@@ -461,10 +461,10 @@ class WC_Admin_List_Table_Orders extends WC_Admin_List_Table {
 		$columns    = apply_filters(
 			'woocommerce_admin_order_preview_line_item_columns',
 			array(
-				'product'  => __( 'Product', 'woocommerce' ),
-				'quantity' => __( 'Quantity', 'woocommerce' ),
-				'tax'      => __( 'Tax', 'woocommerce' ),
-				'total'    => __( 'Total', 'woocommerce' ),
+				'product'  => __( 'Товари', 'woocommerce' ),
+				'quantity' => __( 'Кількість', 'woocommerce' ),
+				'tax'      => __( 'Податок', 'woocommerce' ),
+				'total'    => __( 'Загальна Сума', 'woocommerce' ),
 			),
 			$order
 		);

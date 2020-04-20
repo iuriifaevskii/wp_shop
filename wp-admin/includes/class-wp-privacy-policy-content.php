@@ -633,7 +633,7 @@ final class WP_Privacy_Policy_Content {
 		}
 
 		/* translators: Default privacy policy heading. */
-		$strings[] = '<h2>' . __( 'Additional information' ) . '</h2>';
+		$strings[] = '<h2>' . __( 'Додаткова Інформація' ) . '</h2>';
 
 		if ( $description ) {
 			/* translators: Privacy policy tutorial. */

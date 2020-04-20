@@ -1882,7 +1882,7 @@ class WC_Facebookcommerce_Integration extends WC_Integration {
 				'image_link'   => $product_data['image_url'],
 				'brand'        => strip_tags( WC_Facebookcommerce_Utils::get_store_name() ),
 				'link'         => $product_data['url'],
-				'price'        => $product_data['price'] . ' ' . get_woocommerce_currency(),
+				'price'        => $product_data['price'] . ' грн.',
 			];
 
 			array_push( $items, $feed_item );

@@ -138,9 +138,9 @@ if ( ! function_exists( 'storefront_credit' ) ) {
 
 		if ( apply_filters( 'storefront_credit_link', true ) ) {
 			if ( storefront_is_woocommerce_activated() ) {
-				$links_output .= '<a href="https://woocommerce.com" target="_blank" title="' . esc_attr__( 'WooCommerce - The Best eCommerce Platform for WordPress', 'storefront' ) . '" rel="noreferrer">' . esc_html__( 'Built with Storefront &amp; WooCommerce', 'storefront' ) . '</a>.';
+				$links_output .= '<a href="https://woocommerce.com" target="_blank" title="' . esc_attr__( 'WooCommerce - The Best eCommerce Platform for WordPress', 'storefront' ) . '" rel="noreferrer">' . esc_html__( 'сайт створено за допомогою Storefront &amp; WooCommerce', 'storefront' ) . '</a>.';
 			} else {
-				$links_output .= '<a href="https://woocommerce.com/storefront/" target="_blank" title="' . esc_attr__( 'Storefront -  The perfect platform for your next WooCommerce project.', 'storefront' ) . '" rel="noreferrer">' . esc_html__( 'Built with Storefront', 'storefront' ) . '</a>.';
+				$links_output .= '<a href="https://woocommerce.com/storefront/" target="_blank" title="' . esc_attr__( 'Storefront -  The perfect platform for your next WooCommerce project.', 'storefront' ) . '" rel="noreferrer">' . esc_html__( 'сайт створено за допомогою Storefront', 'storefront' ) . '</a>.';
 			}
 		}
 
@@ -308,11 +308,7 @@ if ( ! function_exists( 'storefront_homepage_header' ) ) {
 	function storefront_homepage_header() {
 		edit_post_link( __( 'Edit this section', 'storefront' ), '', '', '', 'button storefront-hero__button-edit' );
 		?>
-		<header class="entry-header">
-			<?php
-			the_title( '<h1 class="entry-title">', '</h1>' );
-			?>
-		</header><!-- .entry-header -->
+		<header class="entry-header" style="min-height: 150px"></header><!-- .entry-header -->
 		<?php
 	}
 }
@@ -332,7 +328,6 @@ if ( ! function_exists( 'storefront_page_header' ) ) {
 		<header class="entry-header">
 			<?php
 			storefront_post_thumbnail( 'full' );
-			the_title( '<h1 class="entry-title">', '</h1>' );
 			?>
 		</header><!-- .entry-header -->
 		<?php
@@ -550,13 +545,13 @@ if ( ! function_exists( 'storefront_post_taxonomy' ) ) {
 		<aside class="entry-taxonomy">
 			<?php if ( $categories_list ) : ?>
 			<div class="cat-links">
-				<?php echo esc_html( _n( 'Category:', 'Categories:', count( get_the_category() ), 'storefront' ) ); ?> <?php echo wp_kses_post( $categories_list ); ?>
+				<?php echo esc_html( _n( 'Категорія:', 'Категорії:', count( get_the_category() ), 'storefront' ) ); ?> <?php echo wp_kses_post( $categories_list ); ?>
 			</div>
 			<?php endif; ?>
 
 			<?php if ( $tags_list ) : ?>
 			<div class="tags-links">
-				<?php echo esc_html( _n( 'Tag:', 'Tags:', count( get_the_tags() ), 'storefront' ) ); ?> <?php echo wp_kses_post( $tags_list ); ?>
+				<?php echo esc_html( _n( 'Тег:', 'Теги:', count( get_the_tags() ), 'storefront' ) ); ?> <?php echo wp_kses_post( $tags_list ); ?>
 			</div>
 			<?php endif; ?>
 		</aside>

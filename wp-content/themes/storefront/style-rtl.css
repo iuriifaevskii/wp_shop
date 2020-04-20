@@ -687,7 +687,8 @@ body {
     letter-spacing: -1px;
     margin: 0; }
     .site-branding .site-title a {
-      font-weight: 700; }
+      font-weight: 700;
+    }
   .site-branding .site-description {
     font-size: 0.875em;
     display: none; }
