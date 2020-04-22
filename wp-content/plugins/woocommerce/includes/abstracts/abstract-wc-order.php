@@ -2105,7 +2105,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 	 */
 	protected function add_order_item_totals_total_row( &$total_rows, $tax_display ) {
 		$total_rows['order_total'] = array(
-			'label' => __( 'Total:', 'woocommerce' ),
+			'label' => __( 'Загальна сума до сплати:', 'woocommerce' ),
 			'value' => $this->get_formatted_order_total( $tax_display ),
 		);
 	}

@@ -139,7 +139,7 @@ class WC_Form_Handler {
 							case 'phone':
 								if ( '' !== $value && ! WC_Validation::is_phone( $value ) ) {
 									/* translators: %s: Phone number. */
-									wc_add_notice( sprintf( __( '%s is not a valid phone number.', 'woocommerce' ), '<strong>' . $field['label'] . '</strong>' ), 'error' );
+									wc_add_notice( sprintf( __( '%s мобільний не є правильним.', 'woocommerce' ), '<strong>' . $field['label'] . '</strong>' ), 'error' );
 								}
 								break;
 							case 'email':
@@ -147,7 +147,7 @@ class WC_Form_Handler {
 
 								if ( ! is_email( $value ) ) {
 									/* translators: %s: Email address. */
-									wc_add_notice( sprintf( __( '%s is not a valid email address.', 'woocommerce' ), '<strong>' . $field['label'] . '</strong>' ), 'error' );
+									wc_add_notice( sprintf( __( '%s емейл не є правильним.', 'woocommerce' ), '<strong>' . $field['label'] . '</strong>' ), 'error' );
 								}
 								break;
 						}

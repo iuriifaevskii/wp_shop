@@ -112,22 +112,22 @@ class WC_Query {
 			case 'view-order':
 				$order = wc_get_order( $wp->query_vars['view-order'] );
 				/* translators: %s: order number */
-				$title = ( $order ) ? sprintf( __( 'Order #%s', 'woocommerce' ), $order->get_order_number() ) : '';
+				$title = ( $order ) ? sprintf( __( 'Замовлення #%s', 'woocommerce' ), $order->get_order_number() ) : '';
 				break;
 			case 'downloads':
-				$title = __( 'Downloads', 'woocommerce' );
+				$title = __( 'Завантаження', 'woocommerce' );
 				break;
 			case 'edit-account':
-				$title = __( 'Account details', 'woocommerce' );
+				$title = __( 'Деталі Акаунту', 'woocommerce' );
 				break;
 			case 'edit-address':
-				$title = __( 'Addresses', 'woocommerce' );
+				$title = __( 'Адреса', 'woocommerce' );
 				break;
 			case 'payment-methods':
-				$title = __( 'Payment methods', 'woocommerce' );
+				$title = __( 'Метод Оплати', 'woocommerce' );
 				break;
 			case 'add-payment-method':
-				$title = __( 'Add payment method', 'woocommerce' );
+				$title = __( 'Додати метод оплати', 'woocommerce' );
 				break;
 			case 'lost-password':
 				$title = __( 'Lost password', 'woocommerce' );

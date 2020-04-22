@@ -34,7 +34,7 @@ class WC_Settings_Payment_Gateways extends WC_Settings_Page {
 	 */
 	public function get_sections() {
 		$sections = array(
-			'' => __( 'Payment methods', 'woocommerce' ),
+			'' => __( 'Тип оплати', 'woocommerce' ),
 		);
 		return apply_filters( 'woocommerce_get_sections_' . $this->id, $sections );
 	}
@@ -53,7 +53,7 @@ class WC_Settings_Payment_Gateways extends WC_Settings_Page {
 				'woocommerce_payment_gateways_settings',
 				array(
 					array(
-						'title' => __( 'Payment methods', 'woocommerce' ),
+						'title' => __( 'Тип оплати', 'woocommerce' ),
 						'desc'  => __( 'Installed payment methods are listed below and can be sorted to control their display order on the frontend.', 'woocommerce' ),
 						'type'  => 'title',
 						'id'    => 'payment_gateways_options',

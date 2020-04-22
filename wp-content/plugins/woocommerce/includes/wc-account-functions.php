@@ -96,13 +96,13 @@ function wc_get_account_menu_items() {
 	);
 
 	$items = array(
-		'dashboard'       => __( 'Dashboard', 'woocommerce' ),
-		'orders'          => __( 'Orders', 'woocommerce' ),
+		'dashboard'       => __( 'Дошка', 'woocommerce' ),
+		'orders'          => __( 'Замовлення', 'woocommerce' ),
 		'downloads'       => __( 'Downloads', 'woocommerce' ),
-		'edit-address'    => __( 'Addresses', 'woocommerce' ),
-		'payment-methods' => __( 'Payment methods', 'woocommerce' ),
-		'edit-account'    => __( 'Account details', 'woocommerce' ),
-		'customer-logout' => __( 'Logout', 'woocommerce' ),
+		'edit-address'    => __( 'Адреса', 'woocommerce' ),
+		'payment-methods' => __( 'Метод Оплати', 'woocommerce' ),
+		'edit-account'    => __( 'Деталі Акаунту', 'woocommerce' ),
+		'customer-logout' => __( 'Вийти', 'woocommerce' ),
 	);
 
 	// Remove missing endpoints.
